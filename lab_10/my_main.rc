@@ -1,0 +1,23 @@
+#define DLG 1000
+#define IDC_STC1 1001
+#define IDC_STC2 1002
+#define num1_edt 1003
+#define num2_edt 1004
+#define sum_btn 1005
+#define IDC_STC3 1006
+#define res_edt 1007
+DLG DIALOGEX 6,6,188,99
+CAPTION "—умма цифр"
+FONT 12,"MS Sans Serif"
+STYLE 0x10CF0000
+EXSTYLE 0x00000000
+BEGIN
+  CONTROL "¬ведите первое число:",IDC_STC1,"Static",0x50000000,6,7,86,9,0x00000000
+  CONTROL "¬ведите второе число:",IDC_STC2,"Static",0x50000000,6,31,86,9,0x00000000
+  CONTROL "",num1_edt,"Edit",0x50010000,112,5,56,13,0x00000200
+  CONTROL "",num2_edt,"Edit",0x50010000,112,29,56,13,0x00000200
+  CONTROL "—ложить",sum_btn,"Button",0x50010000,10,51,166,15,0x00000000
+  CONTROL "–езультат:",IDC_STC3,"Static",0x50000000,6,77,86,9,0x00000000
+  CONTROL "",res_edt,"Edit",0x50010800,112,75,56,13,0x00000200
+END
+#include "D:/assembler/lab_10/masm32/include/RESOURCE.H"
